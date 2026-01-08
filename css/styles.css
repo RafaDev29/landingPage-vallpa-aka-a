@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1f5f3b;
+}
+
+.logo img {
+  width: 40px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* HERO CON IMAGEN DE FONDO */
+.hero {
+  position: relative;
+  height: 90vh;
+  background-image: url('../images/hero-agricultor.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  margin-left: 8%;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #1f5f3b;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
+/* HISTORIA */
+.history {
+  width: 90%;
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.history h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f5f3b;
+}
+
+.history p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+/* VALORES */
+.values {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1f5f3b;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+}
+
+.value-card h3 {
+  color: #1f5f3b;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
