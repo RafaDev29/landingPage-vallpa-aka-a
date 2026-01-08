@@ -16,6 +16,7 @@ body {
 .navbar {
   width: 100%;
   padding: 20px 0;
+  
 }
 
 .nav-container {
@@ -153,3 +154,5 @@ nav a {
   background-color: #f3f4f6;
   color: #6b7280;
 }
+
+
