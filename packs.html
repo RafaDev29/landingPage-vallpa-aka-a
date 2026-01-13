@@ -51,7 +51,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 350</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Básico Arroz', 'Contenido: Urea 50 kg, Fosfato 25 kg, NPK 25 kg', 'S/ 350')">Consultar</button>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 420</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Frutales', 'Cultivos: Mango, Banano. Contenido: NPK 50 kg, Abono orgánico 20 kg, Fertilizante foliar 5 L', 'S/ 420')">Consultar</button>
                 </div>
             </div>
 
@@ -79,7 +79,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 370</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Maíz y Menestras', 'Recomendado para: Maíz, frejol y arveja. Contenido: Urea 50 kg, NPK 25 kg, Micronutrientes 5 kg', 'S/ 370')">Consultar</button>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 360</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Inicial Limón', 'Contenido: NPK 15-15-15 50 kg, Urea 50 kg. Beneficios: Estimula crecimiento vegetativo y formación de flores', 'S/ 360')">Consultar</button>
                 </div>
             </div>
 
@@ -116,7 +116,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 400</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Floración y Fructificación', 'Contenido: NPK 12-24-12 50 kg, Fertilizante foliar 5 L. Beneficios: Favorece la floración y cuajado de frutos', 'S/ 400')">Consultar</button>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price">S/ 430</span>
-                    <button class="btn-pack">Consultar</button>
+                    <button class="btn-pack" onclick="consultarWhatsApp('Pack Maduración y Calidad', 'Contenido: Potasio 50 kg, Calcio 25 kg, Micronutrientes 5 kg. Beneficios: Mejora tamaño, color, sabor y durabilidad del fruto', 'S/ 430')">Consultar</button>
                 </div>
             </div>
 
@@ -142,7 +142,7 @@
                 </div>
                 <div class="pack-footer">
                     <span class="price featured-price">S/ 1,100</span>
-                    <button class="btn-pack featured-btn">Consultar</button>
+                    <button class="btn-pack featured-btn" onclick="consultarWhatsApp('Pack Integral Limón', 'Combina todos los packs anteriores. Nutrición completa durante todo el ciclo del limón', 'S/ 1,100')">Consultar</button>
                 </div>
             </div>
         </div>
@@ -183,6 +183,24 @@
     <footer class="footer">
         <p>© 2026 Vallpa akaña - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+        function consultarWhatsApp(nombrePack, descripcion, precio) {
+            const telefono = '51930179349';
+            const mensaje = `Hola! Estoy interesado en consultar sobre:
+
+*${nombrePack}*
+${descripcion}
+Precio: ${precio}
+
+¿Podrían darme más información?`;
+            
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            const urlWhatsApp = `https://wa.me/${telefono}?text=${mensajeCodificado}`;
+            
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
 
 </body>
 
