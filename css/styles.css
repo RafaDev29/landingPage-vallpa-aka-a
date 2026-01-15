@@ -107,6 +107,90 @@ nav a:hover::after {
   animation: fadeInUp 1s ease;
 }
 
+
+
+/* HERO CON IMAGEN DE PACK */
+.heropacks {
+  position: relative;
+  height: 90vh;
+  background-image: url('../images/close-up-basket-vegetables.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlaypacks {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-contentpacks {
+  position: relative;
+  max-width: 650px;
+  margin-left: 8%;
+  color: white;
+  animation: fadeInUp 1s ease;
+}
+
+
+/* HERO CON IMAGEN DE SERVICE */
+.heroservice {
+  position: relative;
+  height: 90vh;
+  background-image: url('../images/young-agricultural-engineer-studying-new-sort-melon-growing-hothouse.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlayservice {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-contentservice {
+  position: relative;
+  max-width: 650px;
+  margin-left: 8%;
+  color: white;
+  animation: fadeInUp 1s ease;
+}
+
+
+
+/* HERO CON IMAGEN DE SERVICE */
+.herocontactato {
+  position: relative;
+  height: 90vh;
+  background-image: url('../images/land-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlaycontacto {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-contentcontacto {
+  position: relative;
+  max-width: 650px;
+  margin-left: 8%;
+  color: white;
+  animation: fadeInUp 1s ease;
+}
+
+
+
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
